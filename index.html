@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html >
+  <style>
+    div.ex1 {
+  overflow: scroll;
+}
+  .send{
+  align-items: right;
+  }
+  .recv{
+    align-items: right;
+  }
+  div.scroll { 
+                margin:4px, 4px; 
+                padding:4px; 
+                background-color: green; 
+                width: 500p1x; 
+                height: 110px; 
+                overflow-x: hidden; 
+                overflow-y: auto; 
+                text-align:justify; 
+            } 
+
+  </style>
+  <head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  </head>
+
+  <body>
+    <!-- Dropdown Structure -->
+<ul id="dropdown1" class="dropdown-content">
+</ul>
+<nav>
+  <div class="navbar-fixed">
+    <a href="#!" style="margin-left: 2%;" class="brand-logo ">Chat With 💞 </a>
+    <ul class="right hide-on-med-and-down">
+      <li><a class ="Out"href="" >Login</a></li>
+      <li><a href="" class="In">LogOut</a></li>
+      <li><a href="" class="Out">New User</a></li>
+
+      <!-- Dropdown Trigger -->
+    </ul>
+  </div>
+</nav>
+        
+
+    <div class="hide-on-small-and-down">
+      <!--Desktop-->
+      <div class="row l12" >
+        <div class="col l3 m3 green scroll " id="side" style="min-height: 75vh;"></div>
+        <div class="col l9 m9 blue scroll"  id="msg"  style="min-height: 75vh;">
+        <div class="row  l5 m5 light-green " style="margin-top: 1%;align-items: baseline;text-align: left;">Super Man</div>
+        <div class="row  l5 m5 yellow" style="margin-top: 1%;align-items: baseline;text-align: right;">from china</div>
+
+        </div>
+      </div>
+      <div class="row l12 " style="background-color: #12b0e0;">
+        
+        <input id="inp-usr"type="text" class="col l9 " style="border:none;"/>
+        <button id="send"class="col l3 pink" style="color: pink;"><br>   <i class=" material-icons">send</i>
+          <br><br></button>
+      </div>
+
+    </div>
+    <div class="hide-on-med-and-up">
+      <!--Mobile Phones-->
+      <div class="row s10" >
+        <div class="col s12 blue ex1"  id="msg"  style="min-height:76vh">
+        <div class=" s5 light-green" style="bottom:0 ;text-align: left;">Hello</div>
+        <div class=" s5 yellow" style="margin-top: 1%;text-align:right">Kaun</div>
+
+        </div>
+      </div>
+      <div class="row s2 " style="background-color: #12b0e0;">
+        
+        <input type="text" class="col s9 " style="border:none;"/>
+        <button class="col s3 pink" style="color: pink;"><br>   <i class=" material-icons">send</i>
+        </button>
+      </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+      <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script defer src="https://www.gstatic.com/firebasejs/7.21.1/firebase-auth.js"></script>
+<script defer src="https://www.gstatic.com/firebasejs/7.21.1/firebase-firestore.js"></script>
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyBFQI25z9Sb4Azn8Tg7y-VLj2NHhpI2tto",
+    authDomain: "chatfire-3cc41.firebaseapp.com",
+    databaseURL: "https://chatfire-3cc41.firebaseio.com",
+    projectId: "chatfire-3cc41",
+    storageBucket: "chatfire-3cc41.appspot.com",
+    messagingSenderId: "423829334995",
+    appId: "1:423829334995:web:8215386c6741f3b41f5d26",
+    measurementId: "G-VYTP0YC8DW"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  console.log("Apple")
+  //firebase.analytics();
+</script>
+<script src="js/app.js"></script>
+  </body>
+</html>
+      
